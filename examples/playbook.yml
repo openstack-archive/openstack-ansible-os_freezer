@@ -1,0 +1,7 @@
+- name: Run freezer role
+  hosts: all
+  user: root
+  roles:
+    - { role: "os_freezer", tags: [ "os_freezer" ] }
+  vars:
+    freezer_test_var: "Freezer ansible repo "
